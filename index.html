@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Newz</title>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compiled and minified CSS -->
+    <link href="css/materialize.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Newz PWA</title>
+    <!-- TODO add manifest here -->
+    <link rel="manifest" href="/manifest.json">
+    <!-- Add to home screen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Weather PWA">
+    <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+    <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#2F3BA2">
+
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">Ztory</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
+                <ul class="right hide-on-med-and-down navbar-fixed">
+                    <li><a href="#" class="btn-home"><i class="material-icons">home</i></a></li>
+                    <li><a href="#modal1" class="modal-trigger btn-follow">Follow <i class="material-icons right">add</i></a></li>
+                    <li><a href="#" class="btn-favorite-stories">Favorite Stories <i class="material-icons right">favorite</i></a></li>
+                </ul>
+                
+            </div>
+        </nav>
+        </div>
+        <ul class="side-nav" id="mobile-demo">
+            <li><a href="#" class="btn-home"><i class="material-icons">home</i> Home</a></li>
+            <li><a href="#modal1" class="modal-trigger btn-follow">Follow <i class="material-icons">add</i></a></li>
+            <li><a href="#" class="btn-favorite-stories">Favorite Stories <i class="material-icons">favorite</i></a></li>
+        </ul>
+        <div class="container">
+            <div class="col s12 m12 l6 card-template" hidden>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/sample-1.jpg">
+                        <span class="card-title">Headline</span>
+                    </div>
+                    <div class="card-content">
+                        <p>
+                            Description
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        Read More at <a href="#">Newspaper</a>
+                        <div class="right"><i class="material-icons">favorite</i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row cards-section">
+
+            </div>
+
+
+        </div>
+
+
+        <div class="modal-option" hidden>
+            <input type="checkbox" id="test1" class="checkbox-input" />
+            <label for="test1"></label>
+        </div>
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal bottom-sheet">
+            <div class="modal-content">
+                <h4>Follow Your Favourite News Papers</h4>
+                <div class="modal-maincontent">
+
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
+        </div>
+        <div class="loader">
+            <svg viewBox="0 0 32 32" width="32" height="32">
+                <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
+            </svg>
+        </div>
+        <!--Import jQuery before materialize.js-->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="js/materialize.min.js"></script>
+
+
+        <script src="js/app.js"></script>
+        <script src="service-worker.js"></script>
+        <script>
+            $(document).ready(function () {
+                // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+                $('.modal').modal();
+                $(".button-collapse").sideNav();
+            });
+
+        </script>
+</body>
+</html>
