@@ -1,7 +1,7 @@
 var cacheName = 'NewzPWA-step-6-3';
 var dataCacheName = 'NewzData-v1';
 var filesToCache = [
-  '/',
+  '{{ site.baseurl }}/',
   '/index.html',
   '/js/jquery-3.2.1.min.js',
   '/css/materialize.min.css',
