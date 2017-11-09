@@ -8,14 +8,14 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Compiled and minified CSS -->
-    <link href="css/materialize.min.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="{{ site.baseurl }}/css/materialize.min.css" rel="stylesheet" />
+    <link href="{{ site.baseurl }}/css/style.css" rel="stylesheet" />
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <title>Newz PWA</title>
     <!-- TODO add manifest here -->
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="{{ site.baseurl }}//manifest.json">
     <!-- Add to home screen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -95,13 +95,13 @@
             </svg>
         </div>
         <!--Import jQuery before materialize.js-->
-        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="{{ site.baseurl }}/js/jquery-3.2.1.min.js"></script>
         <!-- Compiled and minified JavaScript -->
         <script src="js/materialize.min.js"></script>
 
 
-        <script src="js/app.js"></script>
-        <script src="service-worker.js"></script>
+        <script src="{{ site.baseurl }}/js/app.js"></script>
+        <script src="{{ site.baseurl }}/service-worker.js"></script>
         <script>
             $(document).ready(function () {
                 // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
