@@ -1,13 +1,9 @@
 {
-  "name": "ShopOn",
-  "short_name": "ShopOn",
+  "name": "Ztory",
+  "short_name": "Ztory",
   "icons": [{
     "src": "images/icons/icon-128x128.png",
       "sizes": "128x128",
-      "type": "image/png"
-    }, {
-      "src": "images/icons/icon-144x144.png",
-      "sizes": "144x144",
       "type": "image/png"
     }, {
       "src": "images/icons/icon-152x152.png",
@@ -24,6 +20,6 @@
     }],
   "start_url": "/index.html",
   "display": "standalone",
-  "background_color": "#3E4EB8",
-  "theme_color": "#2F3BA2"
+  "background_color": "#cb202d",
+  "theme_color": "#cb202d"
 }
