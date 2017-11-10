@@ -1,13 +1,13 @@
 var cacheName = 'NewzPWA-step-6-3';
 var dataCacheName = 'NewzData-v1';
 var filesToCache = [
-  '{{ site.baseurl }}/',
-  '{{ site.baseurl }}/index.html',
-  '{{ site.baseurl }}/js/jquery-3.2.1.min.js',
-  '{{ site.baseurl }}/css/materialize.min.css',
-  '{{ site.baseurl }}/js/materialize.min.js',
-  '{{ site.baseurl }}/js/app.js',
-  '{{ site.baseurl }}/css/style.css'
+  '/',
+  'index.html',
+  'js/jquery-3.2.1.min.js',
+  'css/materialize.min.css',
+  'js/materialize.min.js',
+  'js/app.js',
+  'css/style.css'
 ];
 
 self.addEventListener('install', function(e) {
