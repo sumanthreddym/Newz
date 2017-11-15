@@ -217,7 +217,7 @@ function displayFavoriteStories() {
 }
 
 app.init = function(){
-    if(app.favoriteStories.length > 0){
+    if(app.favoriteNewsPapers.length > 0){
     document.querySelector('.welcome-card').setAttribute('hidden','true');
     }
     else{
