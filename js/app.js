@@ -218,7 +218,7 @@ function displayFavoriteStories() {
 
 app.init = function(){
     if(app.favoriteStories.length > 0){
-    document.querySelector('.welcome-card').setAttribute('hidden',true);
+    document.querySelector('.welcome-card').setAttribute('hidden','true');
     }
     else{
     document.querySelector('.welcome-card').removeAttribute('hidden');
