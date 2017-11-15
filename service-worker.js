@@ -1,5 +1,5 @@
 var cacheName = 'NewzPWA-step-6-15';
-var dataCacheName = 'NewzData-v1';
+var dataCacheName = 'NewzData-v2';
 var filesToCache = [
   'index.html',
   'js/jquery-3.2.1.min.js',
