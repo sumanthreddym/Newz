@@ -16,6 +16,7 @@
         , { name: "Business Insider UK", sourceStr: "business-insider-uk" }, { name: "BuzzFeed", sourceStr: "buzzfeed" }
         , { name: "CNBC", sourceStr: "cnbc" }, { name: "CNN", sourceStr: "cnn" }, { name: "Daily Mail", sourceStr: "daily-mail" }]
 };
+app.init();
 app.getNews = function () {
     app.favoriteNewsPapers = JSON.parse(localStorage.getItem('favoriteNewsPapers'));
 
@@ -62,6 +63,7 @@ function updateFavoriteNewsPapers() {
     app.saveSelectedNewsPapers();
     app.container.textContent = '';
     app.getNews();
+    app.init();
 }
 function addFavoriteStories() {
     var cardElement = event.path[3];
@@ -213,6 +215,16 @@ function displayFavoriteStories() {
     document.querySelector('.btn-follow').classList.remove('active');
     document.querySelector('.btn-favorite-stories').classList.add('active');
 }
+
+app.init = function(){
+    if(app.favoriteStories.length > 0){
+    document.querySelector('.welcome-card').setAttribute('hidden',true);
+    }
+    else{
+    document.querySelector('.welcome-card').removeAttribute('hidden');
+    }
+}
+//Register service worker here
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker
              .register('./service-worker.js')
