@@ -1,4 +1,4 @@
-var cacheName = 'NewzPWA-step-6-13';
+var cacheName = 'NewzPWA-step-6-14';
 var dataCacheName = 'NewzData-v1';
 var filesToCache = [
   'index.html',
