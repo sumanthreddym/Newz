@@ -16,7 +16,7 @@
         , { name: "Business Insider UK", sourceStr: "business-insider-uk" }, { name: "BuzzFeed", sourceStr: "buzzfeed" }
         , { name: "CNBC", sourceStr: "cnbc" }, { name: "CNN", sourceStr: "cnn" }, { name: "Daily Mail", sourceStr: "daily-mail" }]
 };
-app.init();
+
 app.getNews = function () {
     app.favoriteNewsPapers = JSON.parse(localStorage.getItem('favoriteNewsPapers'));
 
@@ -224,6 +224,7 @@ app.init = function(){
     document.querySelector('.welcome-card').removeAttribute('hidden');
     }
 }
+app.init();
 //Register service worker here
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker
